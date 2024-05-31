@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Design</title>
+<link rel="icon" type="image/png" href="2cook-favicon-color.png">
+<style>
+/* CSS Styles */
+
+@font-face {
+  font-family: 'Cabin Sketch';
+  src: url('Cabin Sketch.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Akaya Telivigala';
+  src: url('Akaya Telivigala.ttf') format('truetype');
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3eeea;
+}
+
+.menu-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #cebcb3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 999;
+}
+
+.logo {
+  height: 60%;
+  width: auto;
+  max-width: 100%;
+  margin-right: 10px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab {
+  margin-right: 22px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  padding: 5px 10px;
+  font-family: 'Cabin Sketch', cursive;
+  color: #7a454a;
+  font-size: 16px;
+}
+
+.tab:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.start-button {
+  background-color: #f3eeea;
+  border: none;
+  color: #75464a;
+  padding: 10px 30px;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: inherit;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+.background-img {
+  background-image: url('background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.articles-container {
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.section-heading {
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 40px;
+}
+
+.article-box {
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.article-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.article-box img {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  max-height: 200px;
+}
+
+.article-box h3 {
+  margin: 10px;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+.section-heading {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none; /* Initially hidden */
+  cursor: pointer;
+}
+
+.hamburger-icon img {
+  height: 40px;
+  width: auto;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .tabs {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #cebcb3;
+  }
+
+  .hamburger-icon {
+    margin-right: 20px;
+    display: block; /* Show the hamburger icon */
+  }
+}
+</style>
+</head>
+<body>
+    
+<div class="menu-bar">
+    <img class="logo" src="logo-no-background.png" alt="Logo">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <img src="hamburgericon.png" alt="Hamburger Icon">
+    </div>
+    <div class="tabs">
+      <div class="tab" onclick="window.location.href='index.html'"><b>Home</b></div>
+      <div class="tab" onclick="window.location.href='About.html'"><b>About Us</b></div>
+      <div class="tab" onclick="window.location.href='HowItWorks.html'"><b>How It Works</b></div>
+      <div class="tab start-button" onclick="window.location.href='selection.html'"><b>Let's Start</b></div>
+      <div class="tab" onclick="window.location.href='profile.html'"><b>Profile</b></div>
+      <div class="tab" onclick="window.location.href='articles.html'"><b>Articles</b></div>
+      <div class="tab" onclick="window.location.href='contactus.html'"><b>Contact Us</b></div>
+    </div>
+  </div>
+  <div class="articles-container">
+    <h2 class="section-heading">Featured Articles</h2>
+    <div class="article-box" onclick="window.location.href='article1.html'">
+      <img src="https://i.pinimg.com/originals/2b/4e/de/2b4eded0d01ffb482c697d05624f733c.jpg" alt="Article 1 Image">
+      <h3>Berrylicious Delight</h3>
+      <h3 style="font-size:14px">~Sukhvinder Singh</h3>
+    </div>
+    <div class="article-box" onclick="window.location.href='article2.html'">
+        <img src="https://th.bing.com/th/id/OIP.mQTCgtZmxvcvLJIFeGRVFAAAAA?w=142&h=190&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Article 1 Image">
+        <h3>Rise And Shine: The perfect breakfast plate</h3>
+        <h3 style="font-size:14px">~Carla Hall</h3>
+
+      </div>
+      <div class="article-box" onclick="window.location.href='article3.html'">
+        <img src="https://th.bing.com/th/id/OIP.KKDXNWi7fx85zyhASwxIwQHaJ4?w=163&h=217&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Article 1 Image">
+        <h3>Green Goodness: Exploring the vibrant world of veggie delights</h3>
+        <h3 style="font-size:14px">~Antonia Lofaso</h3>
+
+      </div>
+      <div class="article-box" onclick="window.location.href='article4.html'">
+        <img src="https://th.bing.com/th/id/OIP.ikcK_yfOC_4dnWIWb91jqwAAAA?w=278&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Article 1 Image">
+        <h3>Artistry on a Plate: The culinary creations of a master chef</h3>
+        <h3 style="font-size:14px">~Art Smith</h3>
+
+      </div>
+      <div class="article-box" onclick="window.location.href='article5.html'">
+        <img src="https://th.bing.com/th/id/OIP.ENI_G6rNtcYIcapAA74FbAHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Article 1 Image">
+        <h3>Chocolate Dreams: A playful breakfast wonderland</h3>
+        <h3 style="font-size:14px">~Dolly Singh</h3>
+
+      </div>
+      <div class="article-box" onclick="window.location.href='article1.html'">
+        <img src="https://th.bing.com/th/id/OIP.zmsBMR99gueP8mr6-jMSUwHaHa?w=168&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Article 1 Image">
+        <h3>The Art of Precision: Mastering the fine skill of chopping</h3>
+        <h3 style="font-size:14px">~Ruby's Kitchen</h3>
+
+      </div>
+      <div class="article-box" onclick="window.location.href='article1.html'">
+        <img src="https://th.bing.com/th/id/OIP.bf_IwzOIhZSqfd6YLPi-iwHaE8?w=221&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Article 1 Image">
+        <h3>Global Gastronomy: Exploring the world's diverse cuisines</h3>
+        <h3 style="font-size:14px">~Gordon Ramsay</h3>
+
+      </div>
+    <div class="article-box" onclick="window.location.href='article2.html'">
+      <img src="https://th.bing.com/th/id/OIP.G8thHLW0pBBIIbDFhRSVoAHaFj?w=233&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Article 2 Image">
+      <h3>Exploring the Rich Flavours of India</h3>
+      <h3 style="font-size:14px">~Sukhvinder Singh</h3>
+
+    </div>
+    <!-- Add more article boxes as needed -->
+  </div>
+
+<script>
+function toggleMenu() {
+  var tabs = document.querySelector('.tabs');
+  tabs.style.display = tabs.style.display === 'none' ? 'flex' : 'none';
+}
+</script>
+
+</body>
+</html>
+
+   

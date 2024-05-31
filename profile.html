@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Design</title>
+<link rel="icon" type="image/png" href="2cook-favicon-color.png">
+<style>
+/* CSS Styles */
+
+@font-face {
+  font-family: 'Cabin Sketch';
+  src: url('Cabin Sketch.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Akaya Telivigala';
+  src: url('Akaya Telivigala.ttf') format('truetype');
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3eeea;
+}
+
+.menu-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #cebcb3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 999;
+}
+
+.logo {
+  height: 60%;
+  width: auto;
+  max-width: 100%;
+  margin-right: 10px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab {
+  margin-right: 22px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  padding: 5px 10px;
+  font-family: 'Cabin Sketch', cursive;
+  color: #7a454a;
+  font-size: 16px;
+}
+
+.tab:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.start-button {
+  background-color: #f3eeea;
+  border: none;
+  color: #75464a;
+  padding: 10px 30px;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: inherit;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+.background-img {
+  background-image: url('background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none; /* Initially hidden */
+  cursor: pointer;
+}
+
+.hamburger-icon img {
+  height: 40px;
+  width: auto;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .tabs {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #cebcb3;
+  }
+
+  .hamburger-icon {
+    margin-right: 20px;
+    display: block; /* Show the hamburger icon */
+  }
+}
+.homepage-content {
+  padding: 10px;
+  margin-top: 70px; /* Adjust this value according to the height of your menu bar */
+}
+
+
+.login-container {
+  background: rgba(190, 171, 167, 0.8); /* Semi-transparent background */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+input[type="tel"],
+input[type="text"] {
+  font-family: 'Cabin Sketch', sans-serif;
+  width: calc(100% - 24px);
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  font-family: 'Cabin Sketch', sans-serif;
+  width: calc(100% - 24px);
+  padding: 12px;
+  background-color: #AA7C7A;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #ff8f8f;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="menu-bar">
+    <img class="logo" src="logo-no-background.png" alt="Logo">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <img src="hamburgericon.png" alt="Hamburger Icon">
+    </div>
+    <div class="tabs">
+      <div class="tab" onclick="window.location.href='index.html'"><b>Home</b></div>
+      <div class="tab" onclick="window.location.href='About.html'"><b>About Us</b></div>
+      <div class="tab" onclick="window.location.href='HowItWorks.html'"><b>How It Works</b></div>
+      <div class="tab start-button" onclick="window.location.href='selection.html'"><b>Let's Start</b></div>
+      <div class="tab" onclick="window.location.href='profile.html'"><b>Profile</b></div>
+      <div class="tab" onclick="window.location.href='articles.html'"><b>Articles</b></div>
+      <div class="tab" onclick="window.location.href='contactus.html'"><b>Contact Us</b></div>
+    </div>
+  </div>
+
+
+<div class="background-img">
+  <div class="login-container">
+    <h2>Login</h2>
+    <div class="input-group">
+      <input type="tel" id="phone" placeholder="Enter Phone Number">
+    </div>
+    <button onclick="sendOTP()">Send OTP</button>
+    <div class="input-group">
+      <input type="text" id="otp" placeholder="Enter OTP">
+    </div>
+    <button onclick="verifyOTP()">Verify OTP</button>
+  </div>
+</div>
+
+<script>
+// JavaScript code
+function sendOTP() {
+    var phone = document.getElementById('phone').value;
+    var otp = Math.floor(100000 + Math.random() * 900000); // Generate a random 6-digit OTP
+    alert("OTP sent to " + phone + ": " + otp); // Simulate sending OTP
+    localStorage.setItem('otp', otp); // Store OTP in local storage for verification
+}
+
+function verifyOTP() {
+    var enteredOTP = document.getElementById('otp').value;
+    var storedOTP = localStorage.getItem('otp');
+    if (enteredOTP === storedOTP) {
+        alert("OTP verified successfully!");
+        window.location.href = 'deviceInfo.html'; // Redirect to deviceinfo.html after OTP verification
+    } else {
+        alert("Incorrect OTP. Please try again.");
+    }
+}
+function toggleMenu() {
+  var tabs = document.querySelector('.tabs');
+  tabs.style.display = tabs.style.display === 'none' ? 'flex' : 'none';
+}
+</script>
+</body>
+</html>

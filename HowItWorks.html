@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Page</title>
+<link rel="icon" type="image/png" href="2cook-favicon-color.png">
+<style>
+@font-face {
+  font-family: 'Cabin Sketch';
+  src: url('Cabin Sketch.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Akaya Telivigala';
+  src: url('Akaya Telivigala.ttf') format('truetype');
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Cabin Sketch', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3eeea;
+}
+
+.menu-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #cebcb3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 999;
+}
+
+.logo {
+  height: 60%;
+  width: auto;
+  max-width: 100%;
+  margin-right: 10px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Adjust the max-width as needed */
+  border-radius: 10px 10px 0 0;
+}
+
+.tab {
+  margin-right: 22px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  padding: 5px 10px;
+  font-family: 'Cabin Sketch', cursive;
+  color: #7a454a;
+  font-size: 16px;
+}
+
+.tab:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.start-button {
+  background-color: #f3eeea;
+  border: none;
+  color: #75464a;
+  padding: 10px 30px;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: inherit;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none; /* Initially hidden */
+  cursor: pointer;
+}
+
+.hamburger-icon img {
+  height: 40px;
+  width: auto;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .tabs {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #cebcb3;
+  }
+
+  .hamburger-icon {
+    margin-right: 20px;
+    display: block; /* Show the hamburger icon */
+  }
+}
+
+.page-content {
+  padding: 20px;
+  margin-top: 80px; /* Adjust this value according to the height of your menu bar */
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-family: 'Akaya Telivigala', cursive;
+  color: #7a454a;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+</style>
+</head>
+<body>
+
+<div class="menu-bar">
+  <img class="logo" src="logo-no-background.png" alt="Logo">
+  <div class="hamburger-icon" onclick="toggleMenu()">
+    <img src="hamburgericon.png" alt="Hamburger Icon">
+  </div>
+  <div class="tabs">
+    <div class="tab" onclick="window.location.href='index.html'"><b>Home</b></div>
+    <div class="tab" onclick="window.location.href='About.html'"><b>About Us</b></div>
+    <div class="tab" onclick="window.location.href='HowItWorks.html'"><b>How It Works</b></div>
+    <div class="tab start-button" onclick="window.location.href='selection.html'"><b>Let's Start</b></div>
+    <div class="tab" onclick="window.location.href='profile.html'"><b>Profile</b></div>
+    <div class="tab" onclick="window.location.href='articles.html'"><b>Articles</b></div>
+    <div class="tab" onclick="window.location.href='contactus.html'"><b>Contact Us</b></div>
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="section">
+    <h2>Step 1: Identify Ingredients</h2>
+    <img src="step1.jpeg" alt="Ingredient Image" class="img">
+    <ul>
+      <li>Use the camera feature of the mobile application to scan and identify ingredients by pointing the device towards them.</li>
+      <li>Advanced image recognition technology will detect the ingredients automatically, eliminating the need for manual input.</li>
+      <li>Ensure proper lighting and focus for accurate ingredient recognition.</li>
+    </ul>
+  </div>
+  <div class="section">
+    <h2>Step 2: Receive Personalized Recipe Recommendations</h2>
+    <img src="step2.jpeg" alt="Recipe Recommendation Image" class="img">
+    <ul>
+      <li>Once the ingredients are identified, the website will curate personalized recipe recommendations based on your selected cuisine and ingredient availability.</li>
+      <li>Explore a diverse range of cuisines and cooking styles tailored to your taste.</li>
+      <li>Browse through the recommended recipes to find the perfect dish for your culinary adventure..</li>
+    </ul>
+  </div>
+  <div class="section">
+    <h2>Step 3: Procure Missing Ingredients and Cook Hassle-Free</h2>
+    <img src="step3.jpeg" alt="Procurement Image" class="img">
+    <ul>
+      <li>In case any ingredients are missing, seamlessly integrate with leading e-commerce platforms directly from the website.</li>
+      <li>Purchase the required ingredients with just a few taps, ensuring a hassle-free cooking experience.</li>
+      <li>Follow the step-by-step instructions provided in the selected recipe to create a delightful dish from start to finish.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+function toggleMenu() {
+  var tabs = document.querySelector('.tabs');
+  tabs.style.display = tabs.style.display === 'flex' ? 'none' : 'flex';
+}
+</script>
+</body>
+</html>

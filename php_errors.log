@@ -1,0 +1,243 @@
+[27-May-2024 10:23:16 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), '2cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[27-May-2024 10:29:00 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), '2cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[27-May-2024 10:30:51 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), '2cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[27-May-2024 10:38:18 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'website')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[27-May-2024 10:43:53 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'website')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[27-May-2024 10:44:15 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'website')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[27-May-2024 10:48:21 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'website')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[27-May-2024 10:49:39 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'website')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[27-May-2024 13:20:26 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'website')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[28-May-2024 10:11:00 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'author' in 'field list' in C:\xampp\htdocs\web-main\get_recipes.php:34
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(34): mysqli->prepare('SELECT recipe_n...')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 34
+[28-May-2024 17:29:43 Europe/Berlin] PHP Warning:  Undefined array key "ecommerce_urls" in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:29:43 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:29:43 Europe/Berlin] PHP Warning:  Undefined array key "ecommerce_urls" in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:29:43 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:29:47 Europe/Berlin] PHP Warning:  Undefined array key "ecommerce_urls" in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:29:47 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:29:47 Europe/Berlin] PHP Warning:  Undefined array key "ecommerce_urls" in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:29:47 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:29:47 Europe/Berlin] PHP Warning:  Undefined array key "ecommerce_urls" in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:29:47 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:29:53 Europe/Berlin] PHP Warning:  Undefined array key "ecommerce_urls" in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:29:53 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:29:53 Europe/Berlin] PHP Warning:  Undefined array key "ecommerce_urls" in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:29:53 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:31:36 Europe/Berlin] PHP Warning:  Undefined array key "ecommerce_urls" in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:31:36 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:31:36 Europe/Berlin] PHP Warning:  Undefined array key "ecommerce_urls" in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:31:36 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:31:36 Europe/Berlin] PHP Warning:  Undefined array key "ecommerce_urls" in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:31:36 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:33:42 Europe/Berlin] PHP Warning:  Undefined array key "ecommerce_urls" in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:33:42 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:33:42 Europe/Berlin] PHP Warning:  Undefined array key "ecommerce_urls" in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:33:42 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:33:42 Europe/Berlin] PHP Warning:  Undefined array key "ecommerce_urls" in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:33:42 Europe/Berlin] PHP Deprecated:  json_decode(): Passing null to parameter #1 ($json) of type string is deprecated in C:\xampp\htdocs\web-main\get_recipes.php on line 62
+[28-May-2024 17:51:57 Europe/Berlin] PHP Warning:  Undefined variable $pdo in C:\xampp\htdocs\web-main\get_recipes.php on line 35
+[28-May-2024 17:51:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\web-main\get_recipes.php:35
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 35
+[29-May-2024 13:40:40 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:40:42 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:40:44 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:40:44 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:40:45 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:40:51 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:40:51 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:40:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:40:52 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:40:59 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:41:06 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:41:07 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:41:07 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:41:07 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=20588 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 13:45:33 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 15:20:47 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=15792 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 15:20:47 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=15792 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 15:20:47 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=15792 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 15:20:47 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 15:20:47 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=15792 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 15:20:47 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=15792 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 15:20:47 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=15792 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 15:20:47 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 15:20:47 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 15:20:47 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=15792 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 15:20:47 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=15792 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 15:20:47 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 15:20:47 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 15:20:47 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 15:20:47 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[29-May-2024 15:20:47 Europe/Berlin] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[30-May-2024 07:30:21 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3692 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[30-May-2024 07:30:21 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3692 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[30-May-2024 07:30:21 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3692 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[30-May-2024 07:30:21 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3692 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[30-May-2024 07:30:21 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[30-May-2024 07:30:21 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3692 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[30-May-2024 07:30:21 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[30-May-2024 07:30:21 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[30-May-2024 07:30:21 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[30-May-2024 07:30:21 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[30-May-2024 07:30:21 Europe/Berlin] PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=3692 in C:\xampp\htdocs\web-main\get_recipes.php on line 14
+[30-May-2024 07:30:21 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\web-main\get_recipes.php:14
+Stack trace:
+#0 C:\xampp\htdocs\web-main\get_recipes.php(14): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'cook')
+#1 {main}
+  thrown in C:\xampp\htdocs\web-main\get_recipes.php on line 14

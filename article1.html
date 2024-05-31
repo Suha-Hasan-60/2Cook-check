@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Design</title>
+<link rel="icon" type="image/png" href="2cook-favicon-color.png">
+<style>
+/* CSS Styles */
+
+@font-face {
+  font-family: 'Cabin Sketch';
+  src: url('Cabin Sketch.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Akaya Telivigala';
+  src: url('Akaya Telivigala.ttf') format('truetype');
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3eeea;
+}
+
+.menu-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #cebcb3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 999;
+}
+
+.logo {
+  height: 60%;
+  width: auto;
+  max-width: 100%;
+  margin-right: 10px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab {
+  margin-right: 22px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  padding: 5px 10px;
+  font-family: 'Cabin Sketch', cursive;
+  color: #7a454a;
+  font-size: 16px;
+}
+
+.tab:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.start-button {
+  background-color: #f3eeea;
+  border: none;
+  color: #75464a;
+  padding: 10px 30px;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: inherit;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+.background-img {
+  background-image: url('background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none; /* Initially hidden */
+  cursor: pointer;
+}
+
+.hamburger-icon img {
+  height: 40px;
+  width: auto;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .tabs {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #cebcb3;
+  }
+
+  .hamburger-icon {
+    margin-right: 20px;
+    display: block; /* Show the hamburger icon */
+  }
+}
+
+  .article-container {
+
+  max-width: 800px;
+  margin: 80px auto 20px; /* Added top margin */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 40px); /* Subtracting padding from the width */
+  max-width: calc(100% - 40px); /* Subtracting padding from the max-width */
+}
+
+
+  .article-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .article-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  .article-date {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+
+  .article-image {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .article-content {
+    font-family: 'Cabin Sketch', Tahoma, Geneva, Verdana, sans-serif;
+
+    line-height: 1.6;
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+  }
+
+  .article-content p {
+    margin-bottom: 20px;
+  }
+
+  .article-content p:last-child {
+    margin-bottom: 0;
+  }
+</style>
+</head>
+<body>
+  <div class="menu-bar">
+    <img class="logo" src="logo-no-background.png" alt="Logo">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <img src="hamburgericon.png" alt="Hamburger Icon">
+    </div>
+    <div class="tabs">
+      <div class="tab" onclick="window.location.href='index.html'"><b>Home</b></div>
+      <div class="tab" onclick="window.location.href='About.html'"><b>About Us</b></div>
+      <div class="tab"><b>How It Works</b></div>
+      <div class="tab start-button" onclick="window.location.href='selection.html'"><b>Let's Start</b></div>
+      <div class="tab" onclick="window.location.href='profile.html'"><b>Profile</b></div>
+      <div class="tab" onclick="window.location.href='articles.html'"><b>Articles</b></div>
+      <div class="tab" onclick="window.location.href='contactus.html'"><b>Contact Us</b></div>
+    </div>
+  </div>
+
+  <div class="article-container">
+    <div class="article-header">
+      <h1 class="article-title">Berrylicious Delight</h1>
+      <p class="article-date">May 15, 2024</p>
+    </div>
+    <img class="article-image" src="https://i.pinimg.com/originals/2b/4e/de/2b4eded0d01ffb482c697d05624f733c.jpg" alt="Berrylicious Delight 1">
+    <div class="article-content">
+      <p>Berrylicious Delight is a mouthwatering dessert that combines the sweetness of strawberries with the creamy richness of cheesecake. It's the perfect treat for any occasion, whether you're celebrating a special event or simply craving something delicious.</p>
+      <p>To make this delectable dessert, start by preparing a graham cracker crust. Crush graham crackers into fine crumbs and mix them with melted butter and a pinch of sugar. Press the mixture into the bottom of a springform pan to form the crust.</p>
+      <img class="article-image" src="https://sugargeekshow.com/wp-content/uploads/2020/01/cherry-cheesecake-recipe-11-500x500.jpg" alt="Berrylicious Delight 2">
+      <p>Next, prepare the cheesecake filling. In a mixing bowl, beat cream cheese, sugar, and vanilla extract until smooth and creamy. Add eggs one at a time, mixing well after each addition. Pour the cheesecake batter over the prepared crust.</p>
+      <p>Now, it's time to add the star ingredient: fresh strawberries! Slice strawberries and arrange them on top of the cheesecake batter. You can create a beautiful pattern or simply scatter them across the surface.</p>
+      <img class="article-image" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https:%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F07%2F14%2FRU192226_009518_8f61b6eca6bdd91edad630cf6386be08c1367d92.jpg" alt="Berrylicious Delight 3">
+      <p>Bake the cheesecake in a preheated oven until the center is set. Once baked, let the cheesecake cool completely before chilling it in the refrigerator for several hours or overnight.</p>
+      <p>When ready to serve, slice the Berrylicious Delight into portions and garnish each slice with additional sliced strawberries and a dollop of whipped cream. Enjoy the delightful combination of sweet strawberries and creamy cheesecake in every bite!</p>
+      <img class="article-image" src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Triple-Berry-No-Bake-Cheesecake_EXPS_TOHcom19_138951_B01_30_6b.jpg?w=1200" alt="Berrylicious Delight 4">
+      <p>For an extra indulgence, drizzle some strawberry sauce or chocolate syrup over the cheesecake slices before serving. This will add an extra burst of flavor and make your Berrylicious Delight even more irresistible.</p>
+      <p>Whether you're hosting a dinner party or simply treating yourself to a delicious dessert, Berrylicious Delight is sure to impress. With its perfect balance of sweetness and creaminess, it's a dessert that everyone will love.</p>
+    </div>
+  </div>
+  <script>
+    function toggleMenu() {
+      var tabs = document.querySelector('.tabs');
+      tabs.style.display = tabs.style.display === 'none' ? 'flex' : 'none';
+    }
+    </script>
+</body>
+</html>

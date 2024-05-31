@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Design</title>
+<link rel="icon" type="image/png" href="2cook-favicon-color.png">
+<style>
+@font-face {
+  font-family: 'Cabin Sketch';
+  src: url('Cabin Sketch.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Akaya Telivigala';
+  src: url('Akaya Telivigala.ttf') format('truetype');
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3eeea;
+}
+.menu-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #cebcb3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 999;
+}
+.logo {
+  height: 60%;
+  width: auto;
+  max-width: 100%;
+  margin-right: 10px;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tab {
+  margin-right: 22px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  padding: 5px 10px;
+  font-family: 'Cabin Sketch', cursive;
+  color: #7a454a;
+  font-size: 16px;
+}
+.tab:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.start-button {
+  background-color: #f3eeea;
+  border: none;
+  color: #75464a;
+  padding: 10px 30px;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: inherit;
+  border-radius: 20%;
+  cursor: pointer;
+}
+.background-img {
+  background-image: url('background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none; /* Initially hidden */
+  cursor: pointer;
+}
+.hamburger-icon img {
+  height: 40px;
+  width: auto;
+}
+/* Media Query */
+@media (max-width: 768px) {
+  .tabs {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #cebcb3;
+  }
+  .hamburger-icon {
+    margin-right: 20px;
+    display: block; /* Show the hamburger icon */
+  }
+}
+.homepage-content {
+  padding: 10px;
+  margin-top: 70px; /* Adjust this value according to the height of your menu bar */
+}
+.cuisine-background {
+  width: 100%;
+  height: 100vh;
+  background-image: url('backgroundimg.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cuisine-heading {
+  font-size: 36px;
+  color: #fff;
+}
+.cuisine-buttons {
+  margin-top: 20px;
+}
+.cuisine-button {
+  background-color: #cebcb3;
+  border: none;
+  color: #7a454a;
+  padding: 10px 20px;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+  <div class="menu-bar">
+    <img class="logo" src="logo-no-background.png" alt="Logo">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <img src="hamburgericon.png" alt="Hamburger Icon">
+    </div>
+    <div class="tabs">
+      <div class="tab" onclick="window.location.href='index.html'"><b>Home</b></div>
+      <div class="tab" onclick="window.location.href='About.html'"><b>About Us</b></div>
+      <div class="tab" onclick="window.location.href='HowItWorks.html'"><b>How It Works</b></div>
+      <div class="tab start-button" onclick="window.location.href='selection.html'"><b>Let's Start</b></div>
+      <div class="tab" onclick="window.location.href='profile.html'"><b>Profile</b></div>
+      <div class="tab" onclick="window.location.href='articles.html'"><b>Articles</b></div>
+      <div class="tab" onclick="window.location.href='contactus.html'"><b>Contact Us</b></div>
+    </div>
+  </div>
+
+  <div class="cuisine-background">
+    <h2 class="cuisine-heading">Select Cuisine</h2>
+    <div class="cuisine-buttons">
+      <form id="cuisine-form">
+        <button type="button" name="cuisine" value="Italian" class="cuisine-button" onclick="getRecipes('Italian')">Italian</button>
+        <button type="button" name="cuisine" value="Mexican" class="cuisine-button" onclick="getRecipes('Mexican')">Mexican</button>
+        <button type="button" name="cuisine" value="Indian" class="cuisine-button" onclick="getRecipes('Indian')">Indian</button>
+        <button type="button" name="cuisine" value="Chinese" class="cuisine-button" onclick="getRecipes('Chinese')">Chinese</button>
+        <button type="button" name="cuisine" value="Japanese" class="cuisine-button" onclick="getRecipes('Japanese')">Japanese</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      var tabs = document.querySelector('.tabs');
+      tabs.style.display = (tabs.style.display === 'none' || tabs.style.display === '') ? 'flex' : 'none';
+    }
+
+    function getRecipes(cuisine) {
+      const formData = new FormData();
+      formData.append('cuisine', cuisine);
+
+      fetch('get_recipes.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.error) {
+          console.error('Error:', data.error);
+          return;
+        }
+        // Save recipes to local storage
+        localStorage.setItem('recipes', JSON.stringify(data));
+        // Redirect to recipes.html
+        window.location.href = 'recipes.html';
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+    }
+  </script>
+</body>
+</html>
